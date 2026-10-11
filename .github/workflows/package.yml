@@ -13,12 +13,12 @@ jobs:
         with:
           components: rustfmt, clippy
       - name: Dependencies
-        run: sudo apt-get update && sudo apt-get install -y libxkbcommon-dev libegl1-mesa-dev libwayland-dev libx11-dev
+        run: sudo apt-get update && sudo apt-get install -y libxkbcommon-dev libegl1-mesa-dev libwayland-dev libx11-dev desktop-file-utils
       - run: cargo fmt --check
       - run: cargo clippy --locked --all-targets -- -D warnings
       - run: cargo test --locked
       - run: python3 -m unittest discover -s tests -p 'test_*.py'
-      - run: cargo build --locked --release --jobs 2
+      - run: cargo build --locked --release --jobs 4
       - run: python3 scripts/package.py
       - name: Verify extracted download and installer
         run: |
