@@ -7,8 +7,8 @@ source folder, review the suggested settings, and launch or build your app with
 its documentation and process log close at hand.
 
 Version 0.1 is an early development version, tested locally on Omarchy. Broader
-Linux and clean-system verification remain pending. Build from source using the
-instructions below; a packaged binary release is not available yet.
+Linux graphical verification remains limited. A Linux x86_64 installer package
+is available from [Releases](https://github.com/CodeFu72/launchshelf/releases/tag/v0.1.0).
 
 ## Features
 
@@ -26,6 +26,17 @@ Detection creates a proposal; it does not install dependencies or run commands.
 Python detection currently recognizes `app.py` and `main.py`; generic desktop
 entry import delegates execution to `gtk-launch`, respecting the desktop system's
 handling of file arguments and terminal settings.
+
+## Download and install
+
+[Download the Linux x86_64 package](https://github.com/CodeFu72/launchshelf/releases/tag/v0.1.0).
+Extract the `.tar.gz` archive and run `./install.sh`, then open LaunchShelf from
+its launcher entry. No Rust compiler, FUSE or administrator privileges are needed.
+Requires glibc 2.39 or newer and Python 3.8+. See [installation, dependencies and
+uninstall instructions](docs/INSTALL.md).
+
+The release is an early prerelease. Built and checked on Ubuntu 24.04; graphical
+use checked on Omarchy. Other desktop combinations need community testing.
 
 ## Build and run
 
@@ -84,6 +95,7 @@ changes; it is not continuously monitored.
 cargo fmt --check
 cargo clippy --locked --all-targets -- -D warnings
 cargo test --locked
+python3 -m unittest discover -s tests -p 'test_*.py'
 ```
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) and [the development roadmap](docs/ROADMAP.md).

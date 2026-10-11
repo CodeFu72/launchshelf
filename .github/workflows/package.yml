@@ -1,0 +1,41 @@
+name: Linux download
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - name: Dependencies
+        run: sudo apt-get update && sudo apt-get install -y libxkbcommon-dev libegl1-mesa-dev libwayland-dev libx11-dev
+      - run: cargo fmt --check
+      - run: cargo clippy --locked --all-targets -- -D warnings
+      - run: cargo test --locked
+      - run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - run: cargo build --locked --release --jobs 2
+      - run: python3 scripts/package.py
+      - name: Verify extracted download and installer
+        run: |
+          cd dist
+          sha256sum -c SHA256SUMS
+          tar -xzf launchshelf-v0.1.0-linux-x86_64.tar.gz
+          cd launchshelf-v0.1.0-linux-x86_64
+          ./bin/launchshelf --help
+          ./install.sh --prefix "$RUNNER_TEMP/launchshelf-install"
+          "$RUNNER_TEMP/launchshelf-install/bin/launchshelf" --help
+          ./uninstall.sh --prefix "$RUNNER_TEMP/launchshelf-install"
+          test ! -f "$RUNNER_TEMP/launchshelf-install/bin/launchshelf"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: launchshelf-linux-x86_64
+          path: |
+            dist/*.tar.gz
+            dist/SHA256SUMS
+          if-no-files-found: error
+          retention-days: 30
