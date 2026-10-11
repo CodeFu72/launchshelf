@@ -1,6 +1,6 @@
 # Launch announcement draft
 
-Status: publication authorized by Kirk. GitHub sign-in is pending; no X post has been sent.
+Status: source published at https://github.com/CodeFu72/launchshelf. No X post has been sent; the finished demo video remains pending.
 
 ## X post
 

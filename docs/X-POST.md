@@ -1,6 +1,6 @@
 # X announcement
 
-Ready to use after the GitHub repository is public. This post has not been sent.
+Ready to post: https://github.com/CodeFu72/launchshelf is public. This post has not been sent.
 
 My first open-source project: LaunchShelf 🚀
 
