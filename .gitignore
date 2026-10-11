@@ -1,0 +1,7 @@
+/target/
+/dist/
+/.launchshelf/
+*.log
+*.bak
+*.AppImage
+__pycache__/

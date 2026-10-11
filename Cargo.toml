@@ -1,0 +1,19 @@
+[package]
+name = "launchshelf"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+description = "A local workshop for the Linux apps you build"
+license = "MIT"
+publish = false
+
+[features]
+screenshot = ["eframe/__screenshot"]
+
+[dependencies]
+eframe = { version = "0.36.2", default-features = false, features = ["default_fonts", "glow", "wayland", "x11", "accesskit"] }
+rfd = "0.17.2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+shlex = "2"
+toml = "1.1"
