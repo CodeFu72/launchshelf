@@ -1,6 +1,6 @@
 # Launch announcement draft
 
-Status: draft for Kirk's review. No post or public repository has been published.
+Status: publication authorized by Kirk. GitHub sign-in is pending; no X post has been sent.
 
 ## X post
 
@@ -10,7 +10,7 @@ So I built LaunchShelf: a native Rust workshop with project cards, reviewed laun
 
 My first open-source release. Feedback welcome!
 
-[Repository link pending]
+https://github.com/CodeFu72/launchshelf
 
 Trim the final copy to the account's post limit after inserting the real URL.
 Pair it with an actual demo of the released app, not mock footage.
@@ -35,5 +35,5 @@ not sufficient to film the functional launch step.
 ## Release review
 
 Confirm GitHub identity, the working name, MIT license, clean-install behavior,
-release packaging and complete video. Public repository and X publication require
-Kirk's review of the prepared result.
+release packaging and complete video. Kirk authorized public GitHub publication. The X announcement is prepared in
+`X-POST.md`; posting it remains a separate action.

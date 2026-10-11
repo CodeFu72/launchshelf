@@ -12,4 +12,7 @@ behavior, run formatting, Clippy and tests, then explain the problem and fix in 
 pull request. Detection must propose settings without executing project code.
 
 Treat contributors respectfully. Contributions are provided under the project's
-MIT license. A public repository and issue tracker will be linked after publication.
+MIT license. Start at [the issue tracker](https://github.com/CodeFu72/launchshelf/issues),
+then fork the repository, create a branch and submit a pull request against `main`.
+Follow [the community conduct policy](CODE_OF_CONDUCT.md). Report vulnerabilities
+using [SECURITY.md](SECURITY.md).

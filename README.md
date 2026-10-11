@@ -6,8 +6,9 @@ LaunchShelf is a native Rust desktop workshop for local Linux projects. Add a
 source folder, review the suggested settings, and launch or build your app with
 its documentation and process log close at hand.
 
-Version 0.1 is an initial release candidate. Public release and clean-system
-installation verification are pending.
+Version 0.1 is an early development version, tested locally on Omarchy. Broader
+Linux and clean-system verification remain pending. Build from source using the
+instructions below; a packaged binary release is not available yet.
 
 ## Features
 
@@ -33,6 +34,8 @@ Development packages vary by distribution. Ubuntu/Debian:
 
 ```sh
 sudo apt install build-essential pkg-config libxkbcommon-dev libegl1-mesa-dev libwayland-dev libx11-dev
+git clone https://github.com/CodeFu72/launchshelf.git
+cd launchshelf
 cargo build --locked --release
 ./target/release/launchshelf
 ```
@@ -85,6 +88,21 @@ cargo test --locked
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) and [the development roadmap](docs/ROADMAP.md).
 Personal registries and customer documents are not part of this repository.
+
+## Community
+
+Created by [Kirk Fuson / CodeFu72](https://github.com/CodeFu72) as a first
+open-source project for the Linux community. Bug reports, documentation fixes,
+project detection improvements and testing on other desktops are welcome.
+
+- [Report a bug or suggest a feature](https://github.com/CodeFu72/launchshelf/issues)
+- [Contribution guide](CONTRIBUTING.md)
+- [Community conduct](CODE_OF_CONDUCT.md)
+- [Security reporting](SECURITY.md)
+
+Local validation: 11 core regression tests, formatting, Clippy, native rendering
+and an isolated user-prefix install/uninstall check. GitHub Actions runs the Rust
+checks for pushes and pull requests; check its results before relying on a commit.
 
 Licensed under MIT. Omarchy is an optional integration; LaunchShelf does not
 replace its launcher or alter packaged system configuration.

@@ -18,5 +18,6 @@ addresses for contributors who prefer them. Confirm your public identity before
 publishing. Personal account settings stay in local Git configuration, not here.
 
 Creating a commit does not upload anything. Creating a public GitHub repository,
-pushing the code and publishing a release are separate steps. We will review the
-code, license, downloads and demo before those steps.
+pushing the code and publishing a release are separate steps. The source repository
+is https://github.com/CodeFu72/launchshelf. A packaged release and the finished demo
+remain separate milestones.
