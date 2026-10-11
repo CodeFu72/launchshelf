@@ -4,10 +4,15 @@ Ready to post: https://github.com/CodeFu72/launchshelf is public. This post has 
 
 My first open-source project: LaunchShelf 🚀
 
-A native Rust home for the Linux apps you build: project cards, launch/build commands, Git status and logs.
+A native Rust home for the Linux apps you build: launch/build commands, Git status and logs.
 
-Built on Omarchy. MIT licensed. Early version—feedback and contributions welcome!
+Built on Omarchy. Thanks @dhh and the Omarchy contributors!
 
+MIT licensed. Feedback welcome.
 https://github.com/CodeFu72/launchshelf
 
-Attach a clean LaunchShelf screenshot or the finished demo video.
+Attach the captioned demo video or a clean LaunchShelf screenshot.
+
+Suggested first reply after posting:
+
+Linux x64 download and installation instructions: https://github.com/CodeFu72/launchshelf/releases/tag/v0.1.0

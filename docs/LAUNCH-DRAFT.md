@@ -4,16 +4,8 @@ Status: source published at https://github.com/CodeFu72/launchshelf. No X post h
 
 ## X post
 
-I kept building little Linux apps—and losing track of how to run them.
-
-So I built LaunchShelf: a native Rust workshop with project cards, reviewed launch/build commands, Git status and useful logs.
-
-My first open-source release. Feedback welcome!
-
-https://github.com/CodeFu72/launchshelf
-
-Trim the final copy to the account's post limit after inserting the real URL.
-Pair it with an actual demo of the released app, not mock footage.
+The final announcement and optional download reply are in [X-POST.md](X-POST.md).
+The copy credits @dhh and the Omarchy contributors, as requested by Kirk.
 
 ## Demo storyboard — 30–45 seconds
 
