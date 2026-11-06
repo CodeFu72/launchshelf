@@ -1100,7 +1100,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
     if args.get(1).is_some_and(|s| s == "--help") {
         println!(
-            "LaunchShelf — a home for the apps you build for the apps you build\n\nlaunchshelf                 Open the native desktop app\nlaunchshelf --detect DIR    Preview suggested project settings\nlaunchshelf --list          List saved projects\nlaunchshelf --launch ID     Run a saved launch command\nlaunchshelf --build ID      Run a saved build command\nlaunchshelf --demo          Show synthetic projects without saving\n\nLAUNCHSHELF_DATA overrides the library directory."
+            "LaunchShelf — a home for the apps you build\n\nlaunchshelf                 Open the native desktop app\nlaunchshelf --detect DIR    Preview suggested project settings\nlaunchshelf --list          List saved projects\nlaunchshelf --launch ID     Run a saved launch command\nlaunchshelf --build ID      Run a saved build command\nlaunchshelf --demo          Show synthetic projects without saving\n\nLAUNCHSHELF_DATA overrides the library directory."
         );
         return Ok(());
     }
