@@ -2,13 +2,17 @@
 
 **A home for the apps you build.**
 
-LaunchShelf is a native Rust desktop workshop for local Linux projects. Add a
-source folder, review the suggested settings, and launch or build your app with
-its documentation and process log close at hand.
+![LaunchShelf showing six projects as colorful cards, each with a Launch button](docs/screenshots/shelf.webp)
 
-Version 0.1 is an early development version, tested locally on Omarchy. Broader
+LaunchShelf is a native Rust desktop app for the projects you build on Linux.
+Drop a project folder on it, check the suggested settings, and that app gets its
+own card with one big Launch button.
+
+[See it run on echoline.digital](https://echoline.digital/apps/).
+
+Version 0.2 is an early development version, tested locally on Omarchy. Broader
 Linux graphical verification remains limited. A Linux x86_64 installer package
-is available from [Releases](https://github.com/CodeFu72/launchshelf/releases/tag/v0.1.0).
+is available from [Releases](https://github.com/CodeFu72/launchshelf/releases/tag/v0.2.0).
 
 ## Features
 
@@ -29,7 +33,7 @@ handling of file arguments and terminal settings.
 
 ## Download and install
 
-[Download the Linux x86_64 package](https://github.com/CodeFu72/launchshelf/releases/tag/v0.1.0).
+[Download the Linux x86_64 package](https://github.com/CodeFu72/launchshelf/releases/tag/v0.2.0).
 Extract the `.tar.gz` archive and run `./install.sh`, then open LaunchShelf from
 its launcher entry. No Rust compiler, FUSE or administrator privileges are needed.
 Requires glibc 2.39 or newer and Python 3.8+. See [installation, dependencies and

@@ -24,8 +24,8 @@ jobs:
         run: |
           cd dist
           sha256sum -c SHA256SUMS
-          tar -xzf launchshelf-v0.1.0-linux-x86_64.tar.gz
-          cd launchshelf-v0.1.0-linux-x86_64
+          tar -xzf launchshelf-v0.2.0-linux-x86_64.tar.gz
+          cd launchshelf-v0.2.0-linux-x86_64
           ./bin/launchshelf --help
           ./install.sh --prefix "$RUNNER_TEMP/launchshelf-install"
           "$RUNNER_TEMP/launchshelf-install/bin/launchshelf" --help

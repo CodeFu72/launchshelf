@@ -1,6 +1,6 @@
 [package]
 name = "launchshelf"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 rust-version = "1.95"
 description = "A local workshop for the Linux apps you build"
@@ -17,3 +17,7 @@ serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 shlex = "2"
 toml = "1.1"
+
+[dev-dependencies]
+egui_kittest = { version = "0.36", features = ["wgpu", "eframe", "snapshot"] }
+image = { version = "0.25", default-features = false, features = ["png"] }

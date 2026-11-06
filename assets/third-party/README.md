@@ -14,3 +14,4 @@ collected from Cargo's registry during packaging.
 The package also includes upstream font license texts from epaint_default_fonts
 and the license declarations for locked dependencies. These are third-party
 notices, separate from LaunchShelf's own MIT license.
+- Atkinson Hyperlegible font: https://github.com/googlefonts/atkinson-hyperlegible (SIL Open Font License, embedded in the app).
